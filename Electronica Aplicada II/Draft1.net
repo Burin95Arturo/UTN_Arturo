@@ -1,0 +1,17 @@
+* E:\Arturo UTN\UTN_Arturo\Electronica Aplicada II\Draft1.asc
+Q1 N003 N005 N006 0 NPN
+Q2 N002 N003 N004 0 NPN
+R1 N001 N003 4.7k
+R2 N004 0 10k
+R3 N006 0 1.2k
+R4 N001 N005 355k
+R5 N005 0 100k
+R6 N001 N002 4.7k
+C1 N006 0 100µ
+V1 N001 0 12
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Arturo\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 0 20ms 10ms 1ms
+.backanno
+.end
